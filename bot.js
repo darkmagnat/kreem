@@ -319,13 +319,13 @@ client.on('message', message => {
         .setDescription('**(K) برفكس البوت **')
         .addField('play', 'لتشغيل اغنية')
         .addField('join', 'دخول رومك الصوتي')
-        .addField('disconnect', 'الخروج من رومك الصوتي')
+        .addField('stop', `الخروج من رومك الصوتي')
         .addField('skip', 'تخطي الأغنية')
         .addField('pause', 'ايقاف الاغنية مؤقتا')
         .addField('resume', 'تكملة الاغنية')
         .addField('queue', 'اظهار قائمة التشغيل')
         .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
-        .setFooter('(general_commands) لاظهار الاوامر العامة')
+        .setFooter('(Kgeneral_commands) لاظهار الاوامر العامة')
       message.channel.send(helpEmbed);
     }
 });
@@ -338,6 +338,7 @@ client.on('message', message => {
         .addField('gif', 'البحث عن جيف انت تطلبه')
         .addField('ping', 'معرفة ping البوت')
         .setFooter('المزيد قريبا ان شاء الله!')
+        .setFooter(' https://discordapp.com/api/oauth2/authorize?client_id=502906970517536778&permissions=0&scope=bot لدعوة البوت')
       message.channel.send(helpEmbed);
     }
 });
