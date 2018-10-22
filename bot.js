@@ -318,8 +318,6 @@ client.on('message', message => {
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**(K) برفكس البوت **')
         .addField('play', 'لتشغيل اغنية')
-        .addField('join', 'دخول رومك الصوتي')
-        .addField('stop', `الخروج من رومك الصوتي')
         .addField('skip', 'تخطي الأغنية')
         .addField('pause', 'ايقاف الاغنية مؤقتا')
         .addField('resume', 'تكملة الاغنية')
@@ -338,7 +336,7 @@ client.on('message', message => {
         .addField('gif', 'البحث عن جيف انت تطلبه')
         .addField('ping', 'معرفة ping البوت')
         .setFooter('المزيد قريبا ان شاء الله!')
-        .setFooter(' https://discordapp.com/api/oauth2/authorize?client_id=502906970517536778&permissions=0&scope=bot لدعوة البوت')
+        .addField(' https://discordapp.com/api/oauth2/authorize?client_id=502906970517536778&permissions=0&scope=bot لدعوة البوت')
       message.channel.send(helpEmbed);
     }
 });
